@@ -190,4 +190,8 @@ public class Gun : MonoBehaviour
         currentState = State.Ready;
 
     }
+    public void AddAmmo(int amount)
+    {
+        ammoRemain = Mathf.Min(ammoRemain + amount, gunData.startAmmoRemain);
+    }
 }
