@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -17,6 +17,6 @@ public class PlayerInput : MonoBehaviour
         Move = Input.GetAxis(AxisVertical);
         Rotate = Input.GetAxis(AxisHorizontal);
         Fire = Input.GetButton(AxisFire1);
-        Reload = Input.GetButton(AxisReload);
+        Reload = Input.GetButtonDown(AxisReload);
     }
 }
